@@ -1,0 +1,11 @@
+/Users/ryo/.config/nvim/init.vim
+/Users/ryo/.config/nvim/dein.toml
+/Users/ryo/.config/nvim/plugins/vim-trailing-whitespace.vim
+/Users/ryo/.config/nvim/plugins/tcomment_vim.vim
+/Users/ryo/.config/nvim/plugins/auto-ctags.vim
+/Users/ryo/.config/nvim/plugins/yankround.vim
+/Users/ryo/.config/nvim/plugins/denite.vim
+/Users/ryo/.config/nvim/plugins/colorscheme.vim
+/Users/ryo/.config/nvim/plugins/indentLine.vim
+/Users/ryo/.config/nvim/plugins/ctrlp.vim
+/Users/ryo/.config/nvim/plugins/lightline.vim

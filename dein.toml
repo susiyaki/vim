@@ -1,0 +1,153 @@
+#-------- dein.vim
+
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+#-------- ctrlp.vim
+#
+[[plugins]]
+repo = 'ctrlpvim/ctrlp.vim'
+hook_add = 'source ~/.config/nvim/plugins/ctrlp.vim'
+
+#-------- lightline.vim
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+hook_add = 'source ~/.config/nvim/plugins/lightline.vim'
+
+#-------- vim-trailing-whitespace
+
+[[plugins]]
+repo = 'bronson/vim-trailing-whitespace'
+hook_add = 'source ~/.config/nvim/plugins/vim-trailing-whitespace.vim'
+
+# #-------- vim-better-whitespace
+#
+# [[plugins]]
+# repo = 'ntpeters/vim-better-whitespace'
+# hook_add = 'source ~/.config/nvim/plugins/vim-better-whitespace.vim'
+
+#-------- nerdtree
+# [[plugins]]
+# repo = 'scrooloose/nerdtree'
+# hook_add = 'source ~/.config/nvim/plugins/nerdtree.vim'
+
+#-------- vimfiler
+
+[[plugins]]
+repo = 'Shougo/vimfiler'
+hook_add = 'source ~/.config/nvim/plugins/vimfiler.vim'
+
+#-------- unite.vim
+
+[[plugins]]
+repo = 'Shougo/unite.vim'
+
+#-------- lexima.vim
+
+[[plugins]]
+repo = 'cohama/lexima.vim'
+
+#-------- vim-endwise
+
+[[plugins]]
+repo = 'tpope/vim-endwise'
+
+#-------- vim-anzu
+
+[[plugins]]
+repo = 'osyo-manga/vim-anzu'
+hook_add = 'source ~/.config/nvim/plugins/vim-anzu.vim'
+
+#-------- vim-submode
+
+[[plugins]]
+repo = 'kana/vim-submode'
+hook_add = 'source ~/.config/nvim/plugins/vim-submode.vim'
+
+#-------- yankround.vim
+
+[[plugins]]
+repo = 'LeafCage/yankround.vim'
+hook_add = 'source ~/.config/nvim/plugins/yankround.vim'
+
+#-------- indentLine
+
+#  [[plugins]]
+# repo = 'Yggdroot/indentLine'
+# hook_add = 'source ~/.config/nvim/plugins/indentLine.vim'
+
+#-------- vim-indent-guides
+
+[[plugins]]
+repo = 'nathanaelkane/vim-indent-guides'
+hook_add = 'source ~/.config/nvim/plugins/vim-indent-guides.vim'
+
+#-------- neosnippet-snippets
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+
+#-------- colorscheme
+[[plugins]]
+repo = 'morhetz/gruvbox'
+
+#-------- changed
+
+[[plugins]]
+repo = 'leftouterjoin/changed'
+
+#-------- tcomment_vim
+
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
+hook_add = 'source ~/.config/nvim/plugins/tcomment_vim.vim'
+
+#--------- switch.vim
+[[plugins]]
+repo = 'AndrewRadev/switch.vim'
+hook_add = 'source ~/.config/nvim/plugins/switch.vim'
+
+#--------- vim-gitgutter
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
+#--------- vim-fugitive
+# [[plugins]]
+# repo = 'tpope/vim-fugitive'
+
+#--------- tagbar
+[[plugins]]
+repo = 'majutsushi/tagbar'
+
+#-------- vim-rails
+[[plugins]]
+repo = 'tpope/vim-rails'
+
+#-------- codic-vim
+[[plugins]]
+repo = 'koron/codic-vim'
+hook_add = 'source ~/.config/nvim/plugins/codic-vim.vim'
+
+#-------- vim-operator-user
+[[plugins]]
+repo = 'kana/vim-operator-user'
+
+#-------- vim-operator-surround
+[[plugins]]
+repo = 'rhysd/vim-operator-surround'
+hook_add = 'source ~/.config/nvim/plugins/vim-operator-surround.vim'
+
+#-------- quickrun.vim
+[[plugins]]
+repo = 'thinca/vim-quickrun'
+hook_add = 'source ~/.config/nvim/plugins/quickrun.vim'
+
+#-------- vimproc
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
+build = 'make'
+
+#-------- vimshell
+[[plugins]]
+repo = 'Shougo/vimshell.vim'
