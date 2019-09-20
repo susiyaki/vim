@@ -1,3 +1,7 @@
+" for Python
+let g:python_host_prog = $PYENV_ROOT.'/versions/neovim2/bin/python'
+let g:python3_host_prog = $PYENV_ROOT.'/versions/neovim3/bin/python'
+
 "##Main Setting##
 set fenc=utf-8                          " 文字コード設定
 set nobackup                            " バックアップファイルを作成しない
@@ -7,7 +11,7 @@ set clipboard+=unnamed                  " yankしたときにクリップボー�
 set backupskip=/tmp/*,/private/tmp/*    " tmpディレクトリではバックアップを行わない
 
 set title                               " 編集中のファイル名表示
-set cursorline
+" set cursorline
 set number
 
 set whichwrap=b,s,h,l,<,>,[,],~         " カーソルの左右移動で行間の移動可能
@@ -22,7 +26,7 @@ set foldlevel=100
 
 set splitright                          " 新しい画面を右に開く
 
-set synmaxcol=200                       " syntaxが重くなるのを回避
+set synmaxcol=150                       " syntaxが重くなるのを回避
 
 "##Search Setting##
 set ignorecase                          " 大文字/小文字の区別なし
@@ -56,6 +60,7 @@ nnoremap <C-k> gt
 nnoremap <C-j> gT
 nnoremap st :<C-u>tabnew<CR>
 
+" Leader
 let mapleader = "\<Space>"
 " 上書き保存
 nnoremap <Leader>w :w<CR>
@@ -70,11 +75,11 @@ inoremap <silent> jj <ESC>
 set fileformats=unix,dos,mac
 set fileencodings=utf-8,sjis
 
-" git hookと連携
-autocmd BufWritePost *
-      \ if exists('b:git_dir') && !empty(glob(b:git_dir.'/hooks/ctags')) |
-      \   call system('"'.b:git_dir.'/hooks/ctags"') |
-      \ endif
+" " git hookと連携
+" autocmd BufWritePost *
+"       \ if exists('b:git_dir') && !empty(glob(b:git_dir.'/hooks/ctags')) |
+"       \   call system('"'.b:git_dir.'/hooks/ctags"') |
+"       \ endif
 
 nnoremap <C-]> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
 
@@ -104,6 +109,8 @@ autocmd QuickFixCmdPost *grep* cwindow
 
 "## filetype
 autocmd BufRead,BufNewFile *.tag setfiletype javascript     " riot.js
+autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
+
 
 "## cursorline
 augroup vimrc-auto-cursorline
@@ -146,11 +153,11 @@ endif
 
 set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 
-if dein#load_state(s:dein_cache_dir)
-  call dein#begin(s:dein_cache_dir)
+if dein#load_state("~/.cache/dein")
+  call dein#begin("~/.cache/dein")
 
-  call dein#load_toml(s:dein_config_dir . '/dein.toml', {'lazy': 0})
-  call dein#load_toml(s:dein_config_dir . '/dein_lazy.toml', {'lazy': 1})
+  call dein#load_toml('~/.config/nvim/dein.toml', {'lazy': 0})
+  call dein#load_toml('~/.config/nvim/dein_lazy.toml', {'lazy': 1})
 
   call dein#end()
   call dein#save_state()

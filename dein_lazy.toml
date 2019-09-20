@@ -14,15 +14,15 @@ on_ft = ['snippet']
 depends = ['neosnippet-snippets']
 
 ## filetype切り替え
-#-------- vim-precious
-[[plugins]] # カーソル位置のコンテキストに合わせてftを切り替える
-repo = 'osyo-manga/vim-precious'
-depends = ['context_filetype.vim']
-
-#--------context_filetype
-[[plugins]] # カーソル位置のコンテキストのftを判定するライブラリ
-repo = 'Shougo/context_filetype.vim'
-
+# #-------- vim-precious
+# [[plugins]] # カーソル位置のコンテキストに合わせてftを切り替える
+# repo = 'osyo-manga/vim-precious'
+# depends = ['context_filetype.vim']
+#
+# #--------context_filetype
+# [[plugins]] # カーソル位置のコンテキストのftを判定するライブラリ
+# repo = 'Shougo/context_filetype.vim'
+#
 ## HTML/CSS
 #-------- emmet-vim
 [[plugins]]
@@ -41,10 +41,15 @@ repo = 'gko/vim-coloresque'
 on_ft = ['html', 'css', 'js', 'eruby', 'vim']
 
 ## ruby
-#-------- vim-ruby
-[[plugins]]
-repo = 'vim-ruby/vim-ruby'
-on_ft = ['rb']
+# #-------- vim-ruby
+# [[plugins]]
+# repo = 'vim-ruby/vim-ruby'
+# on_ft = ['rb']
+#
+# #-------- vim-rails
+# [[plugins]]
+# repo = 'tpope/vim-rails'
+# on_ft = ['rb']
 
 # toml
 #-------- vim-toml
@@ -71,7 +76,7 @@ on_ft = ['javascript']
 #-------- javascript-libraries-syntax.vim
 [[plugins]]
 repo = 'othree/javascript-libraries-syntax.vim'
-on_ft = ['javascript', 'typescript']
+on_ft = ['javascript']
 hook_post_source = 'source ~/.config/nvim/plugins/javascript-libraries-syntax.vim'
 
 #-------- vim-jsx-pretty
@@ -82,7 +87,13 @@ on_ft = ['javascript']
 #-------- typescript-vim
 [[plugins]]
 repo = 'leafgarland/typescript-vim'
-on_fi = ['typescript']
+hook_add = 'source ~/.config/nvim/plugins/typescript-vim.vim'
+on_ft = ['typescript']
+
+#-------- nvim-typescript
+# [[plugins]]
+# repo = 'mhartington/nvim-typescript'
+# on_fi = ['typescript']
 
 #-------- vim-js-indent
 [[plugins]]
@@ -91,10 +102,10 @@ on_fi = ['javascript', 'typescript', 'html']
 hook_post_source = 'source ~/.config/nvim/plugins/vim-js-indent.vim'
 
 #-------- typescript-tools
-[[plugins]]
-repo = 'clausreinke/typescript-tools'
-on_ft = ['typescript']
-hook_add = 'source ~/.config/nvim/plugins/typescript-tools.vim'
+# [[plugins]]
+# repo = 'clausreinke/typescript-tools'
+# on_ft = ['typescript']
+# hook_add = 'source ~/.config/nvim/plugins/typescript-tools.vim'
 
 #-------- vim-prettier
 [[plugins]]
