@@ -22,7 +22,7 @@ let g:lightline = {
 " キーマップ
 " ノーマルモード
 " List
-nmap <silent> sg :<C-u>CocList<cr>
+nmap <silent> gl :<C-u>CocList<cr>
 " Definition
 nmap <silent> gd <Plug>(coc-definition)
 " References
@@ -31,26 +31,6 @@ nmap <silent> gr <Plug>(coc-references)
 nmap <silent> <space>r <Plug>(coc-rename)
 " " Format
 " nmap <silent> <space>fmt <Plug>(coc-format)
-
-" grep
-vnoremap <leader>g :<C-u>call <SID>GrepFromSelected(visualmode())<CR>
-nnoremap <leader>g :<C-u>set operatorfunc=<SID>GrepFromSelected<CR>g@
-
-function! s:GrepFromSelected(type)
-  let saved_unnamed_register = @@
-  if a:type ==# 'v'
-    normal! `<v`>y
-  elseif a:type ==# 'char'
-    normal! `[v`]y
-  else
-    return
-  endif
-  let word = substitute(@@, '\n$', '', 'g')
-  let word = escape(word, '| ')
-  let @@ = saved_unnamed_register
-  execute 'CocList grep '.word
-endfunction
-
 
 " 保存時整形
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html :CocCommand prettier.formatFile
