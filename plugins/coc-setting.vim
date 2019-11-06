@@ -24,11 +24,11 @@ let g:lightline = {
 " List
 nmap <silent> sg :<C-u>CocList<cr>
 " Definition
-nmap <silent> <space>df <Plug>(coc-definition)
+nmap <silent> gd <Plug>(coc-definition)
 " References
-nmap <silent> <space>rf <Plug>(coc-references)
+nmap <silent> gr <Plug>(coc-references)
 " Rename
-nmap <silent> <space>rn <Plug>(coc-rename)
+nmap <silent> <space>r <Plug>(coc-rename)
 " " Format
 " nmap <silent> <space>fmt <Plug>(coc-format)
 
