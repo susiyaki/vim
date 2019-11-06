@@ -3,7 +3,8 @@ let g:lightline = {
     \ 'active': {
     \   'left': [ ['mode', 'paste'],
     \             ['fugitive', 'readonly', 'filename', 'modified'],
-    \             ['ctrlpmark'] ],
+      \           [ 'cocstatus', 'currentfunction' ]
+    \           ],
     \   'right': [ [ 'syntastic', 'lineinfo' ], ['percent'],
     \              [ 'filetype' ] ]
     \ },
@@ -17,7 +18,8 @@ let g:lightline = {
     \   'filetype': 'LightlineFiletype',
     \   'fileencoding': 'LightlineFileencoding',
     \   'mode': 'LightlineMode',
-    \   'ctrlpmark': 'CtrlPMark',
+    \   'cocstatus': 'coc#status',
+    \   'currentfunction': 'CocCurrentFunction'
     \ },
     \ }
 
