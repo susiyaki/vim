@@ -3,11 +3,11 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
-#-------- ctrlp.vim
-
-[[plugins]]
-repo = 'ctrlpvim/ctrlp.vim'
-hook_add = 'source ~/.config/nvim/plugins/ctrlp.vim'
+# #-------- ctrlp.vim
+#
+# [[plugins]]
+# repo = 'ctrlpvim/ctrlp.vim'
+# hook_add = 'source ~/.config/nvim/plugins/ctrlp.vim'
 
 #-------- lightline.vim
 
@@ -150,3 +150,10 @@ build = 'make'
 #-------- vimshell
 [[plugins]]
 repo = 'Shougo/vimshell.vim'
+
+#-------- coc.nvim
+
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+build = './install.sh nightly'
+hook_add = 'source ~/.config/nvim/plugins/coc-setting.vim'

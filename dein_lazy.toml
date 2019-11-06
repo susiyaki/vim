@@ -1,9 +1,9 @@
-## 入力補完
-#-------- deoplete.vim
-[[plugins]]
-repo = 'Shougo/deoplete.nvim'
-hook_add = 'source ~/.config/nvim/plugins/deoplete.vim'
-on_i = 1
+# ## 入力補完
+# #-------- deoplete.vim
+# [[plugins]]
+# repo = 'Shougo/deoplete.nvim'
+# hook_add = 'source ~/.config/nvim/plugins/deoplete.vim'
+# on_i = 1
 
 #-------- neosnippet.vim
 [[plugins]]
@@ -101,12 +101,12 @@ repo = 'clausreinke/typescript-tools'
 on_ft = ['typescript']
 hook_add = 'source ~/.config/nvim/plugins/typescript-tools.vim'
 
-#-------- vim-prettier
-[[plugins]]
-repo     = 'prettier/vim-prettier'
-build    = 'yarn install'
-on_ft    = ['javascript', 'typescript', 'vue', 'css', 'scss', 'json', 'markdown']
-hook_add = 'source ~/.config/nvim/plugins/vim-prettier.vim'
+# #-------- vim-prettier
+# [[plugins]]
+# repo     = 'prettier/vim-prettier'
+# build    = 'yarn install'
+# on_ft    = ['javascript', 'typescript', 'vue', 'css', 'scss', 'json', 'markdown']
+# hook_add = 'source ~/.config/nvim/plugins/vim-prettier.vim'
 
 ## json
 #-------- vim-json
