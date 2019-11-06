@@ -4,7 +4,7 @@
 repo = 'Shougo/dein.vim'
 
 #-------- ctrlp.vim
-#
+
 [[plugins]]
 repo = 'ctrlpvim/ctrlp.vim'
 hook_add = 'source ~/.config/nvim/plugins/ctrlp.vim'
@@ -15,7 +15,7 @@ hook_add = 'source ~/.config/nvim/plugins/ctrlp.vim'
 repo = 'itchyny/lightline.vim'
 hook_add = 'source ~/.config/nvim/plugins/lightline.vim'
 
-#-------- vim-trailing-whitespace
+# -------- vim-trailing-whitespace
 
 [[plugins]]
 repo = 'bronson/vim-trailing-whitespace'
@@ -28,6 +28,7 @@ hook_add = 'source ~/.config/nvim/plugins/vim-trailing-whitespace.vim'
 # hook_add = 'source ~/.config/nvim/plugins/vim-better-whitespace.vim'
 
 #-------- nerdtree
+
 # [[plugins]]
 # repo = 'scrooloose/nerdtree'
 # hook_add = 'source ~/.config/nvim/plugins/nerdtree.vim'
@@ -92,10 +93,10 @@ repo = 'Shougo/neosnippet-snippets'
 [[plugins]]
 repo = 'morhetz/gruvbox'
 
-#-------- changed
+#-------- changed 重い
 
-[[plugins]]
-repo = 'leftouterjoin/changed'
+# [[plugins]]
+# repo = 'leftouterjoin/changed'
 
 #-------- tcomment_vim
 
@@ -109,20 +110,18 @@ repo = 'AndrewRadev/switch.vim'
 hook_add = 'source ~/.config/nvim/plugins/switch.vim'
 
 #--------- vim-gitgutter
+
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
 
 #--------- vim-fugitive
-# [[plugins]]
-# repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
 
 #--------- tagbar
 [[plugins]]
 repo = 'majutsushi/tagbar'
-
-#-------- vim-rails
-[[plugins]]
-repo = 'tpope/vim-rails'
 
 #-------- codic-vim
 [[plugins]]

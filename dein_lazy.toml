@@ -46,6 +46,11 @@ on_ft = ['html', 'css', 'js', 'eruby', 'vim']
 repo = 'vim-ruby/vim-ruby'
 on_ft = ['rb']
 
+#-------- vim-rails
+[[plugins]]
+repo = 'tpope/vim-rails'
+on_ft = ['rb']
+
 # toml
 #-------- vim-toml
 [[plugins]] # toml syntax
