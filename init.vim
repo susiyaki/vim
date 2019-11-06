@@ -109,6 +109,8 @@ autocmd QuickFixCmdPost *grep* cwindow
 
 "## filetype
 autocmd BufRead,BufNewFile *.tag setfiletype javascript     " riot.js
+autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
+
 
 "## cursorline
 " augroup vimrc-auto-cursorline
@@ -151,11 +153,11 @@ endif
 
 set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 
-if dein#load_state(s:dein_cache_dir)
-  call dein#begin(s:dein_cache_dir)
+if dein#load_state("~/.cache/dein")
+  call dein#begin("~/.cache/dein")
 
-  call dein#load_toml(s:dein_config_dir . '/dein.toml', {'lazy': 0})
-  call dein#load_toml(s:dein_config_dir . '/dein_lazy.toml', {'lazy': 1})
+  call dein#load_toml('~/.config/nvim/dein.toml', {'lazy': 0})
+  call dein#load_toml('~/.config/nvim/dein_lazy.toml', {'lazy': 1})
 
   call dein#end()
   call dein#save_state()
