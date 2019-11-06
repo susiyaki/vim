@@ -156,3 +156,14 @@ repo = 'Shougo/vimshell.vim'
 repo = 'neoclide/coc.nvim'
 build = './install.sh nightly'
 hook_add = 'source ~/.config/nvim/plugins/coc-setting.vim'
+
+#-------- fzf
+[[plugins]]
+repo = 'junegunn/fzf'
+build = './install --all'
+merged = 0
+
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+depends = 'fzf'
+hook_add = 'source ~/.config/nvim/plugins/fzf.vim'

@@ -28,7 +28,7 @@ depends = ['neosnippet-snippets']
 [[plugins]]
 repo = 'mattn/emmet-vim'
 hook_add = 'source ~/.config/nvim/plugins/emmet-vim.vim'
-on_ft = ['html', 'css', 'js', 'eruby', 'javascript', 'riot']
+on_ft = ['html', 'css', 'eruby', 'javascript', 'riot']
 
 #-------- html5.vim
 [[plugins]]
@@ -38,7 +38,7 @@ on_ft = ['html']
 #-------- vim-coloresque
 [[plugins]]
 repo = 'gko/vim-coloresque'
-on_ft = ['html', 'css', 'js', 'eruby', 'vim']
+on_ft = ['html', 'css', 'eruby', 'vim']
 
 ## ruby
 # #-------- vim-ruby
