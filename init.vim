@@ -87,7 +87,7 @@ nnoremap <C-]> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
 " alias visで前回の状態を回復
 autocmd VimLeave * :mks! ~/.vim.session
 
-"## javascript syntax
+" ## javascript syntax
 augroup MyVimrc
   autocmd!
 augroup END
@@ -109,8 +109,9 @@ autocmd QuickFixCmdPost *grep* cwindow
 
 "## filetype
 autocmd BufRead,BufNewFile *.tag setfiletype javascript     " riot.js
-autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
-
+autocmd BufRead,BufNewFile *.ts setlocal filetype=typescript
+autocmd BufRead,BufNewFile *.tsx set filetype=typescript.tsx
+autocmd BufRead,BufNewFile *.md set filetype=markdown
 
 "## cursorline
 " augroup vimrc-auto-cursorline

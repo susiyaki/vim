@@ -1,0 +1,19 @@
+{
+  "languageserver": {
+    "rust": {
+      "command": "ra_lsp_server",
+      "filetypes": ["rust"],
+      "rootPatterns": ["Cargo.toml"]
+    }
+  },
+  "***********Ruby***********": "",
+  "solargraph.commandPath": "solargraph",
+  "solargraph.bundlerPath":"bundle",
+  "solargraph.completion":true,
+  "solargraph.hover": true,
+  "solargraph.autoformat": true,
+  "solargraph.formatting": true,
+  "solargraph.rename": true,
+  "solargraph.references": true,
+  "solargraph.symbols": true
+}

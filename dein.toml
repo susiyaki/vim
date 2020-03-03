@@ -43,10 +43,10 @@ hook_add = 'source ~/.config/nvim/plugins/vimfiler.vim'
 [[plugins]]
 repo = 'Shougo/unite.vim'
 
-#-------- lexima.vim
-
-[[plugins]]
-repo = 'cohama/lexima.vim'
+# #-------- lexima.vim
+#
+# [[plugins]]
+# repo = 'cohama/lexima.vim'
 
 #-------- vim-endwise
 
@@ -71,6 +71,12 @@ hook_add = 'source ~/.config/nvim/plugins/vim-submode.vim'
 repo = 'LeafCage/yankround.vim'
 hook_add = 'source ~/.config/nvim/plugins/yankround.vim'
 
+#-------- auto-pairs
+
+[[plugins]]
+repo = 'jiangmiao/auto-pairs'
+hook_add = 'source ~/.config/nvim/plugins/auto-pairs.vim'
+
 #-------- indentLine
 
 #  [[plugins]]
@@ -91,6 +97,9 @@ repo = 'Shougo/neosnippet-snippets'
 #-------- colorscheme
 [[plugins]]
 repo = 'morhetz/gruvbox'
+
+[[plugins]]
+repo = 'tomasr/molokai'
 
 #-------- changed 重い
 
@@ -167,3 +176,4 @@ merged = 0
 repo = 'junegunn/fzf.vim'
 depends = 'fzf'
 hook_add = 'source ~/.config/nvim/plugins/fzf.vim'
+

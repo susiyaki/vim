@@ -17,11 +17,12 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gr <Plug>(coc-references)
 " Rename
 nmap <silent> <space>r <Plug>(coc-rename)
-" " Format
-" nmap <silent> <space>fmt <Plug>(coc-format)
+" Format
+nmap <silent> <space>f <Plug>(coc-format)
 
 " 保存時整形
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html :CocCommand prettier.formatFile
+" autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html :CocCommand prettier.formatFile
+
 " prettier setting
 let g:prettier#config#tab_width = 2
 let g:prettier#config#use_tabs = 'false'

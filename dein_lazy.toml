@@ -12,7 +12,7 @@ hook_add = 'source ~/.config/nvim/plugins/neosnippet.vim'
 on_i = 1
 on_ft = ['snippet']
 depends = ['neosnippet-snippets']
-
+#
 ## filetype切り替え
 # #-------- vim-precious
 # [[plugins]] # カーソル位置のコンテキストに合わせてftを切り替える
@@ -28,7 +28,7 @@ depends = ['neosnippet-snippets']
 [[plugins]]
 repo = 'mattn/emmet-vim'
 hook_add = 'source ~/.config/nvim/plugins/emmet-vim.vim'
-on_ft = ['html', 'css', 'eruby', 'javascript', 'riot']
+on_ft = ['html', 'css', 'eruby', 'javascript', 'javascriptreact', 'riot', 'typescript', 'typescript.tsx']
 
 #-------- html5.vim
 [[plugins]]
@@ -41,20 +41,15 @@ repo = 'gko/vim-coloresque'
 on_ft = ['html', 'css', 'eruby', 'vim']
 
 ## ruby
-# #-------- vim-ruby
-# [[plugins]]
-# repo = 'vim-ruby/vim-ruby'
-# on_ft = ['rb']
-#
-# #-------- vim-rails
-# [[plugins]]
-# repo = 'tpope/vim-rails'
-# on_ft = ['rb']
+#-------- vim-ruby
+[[plugins]]
+repo = 'vim-ruby/vim-ruby'
+on_ft = ['ruby']
 
 #-------- vim-rails
 [[plugins]]
 repo = 'tpope/vim-rails'
-on_ft = ['rb']
+on_ft = ['ruby']
 
 # toml
 #-------- vim-toml
@@ -63,31 +58,42 @@ repo = 'cespare/vim-toml'
 on_ft = 'toml'
 
 ## javascript
+
 #-------- vim-javascript
 [[plugins]]
 repo = 'pangloss/vim-javascript'
-on_ft = ['javascript']
-
-#-------- yajs.vim
-[[plugins]]
-repo = 'othree/yajs.vim'
-on_ft = ['javascript']
-
-#-------- es.next.syntax.vim
-[[plugins]]
-repo = 'othree/es.next.syntax.vim'
-on_ft = ['javascript']
-
-#-------- javascript-libraries-syntax.vim
-[[plugins]]
-repo = 'othree/javascript-libraries-syntax.vim'
-on_ft = ['javascript']
-hook_post_source = 'source ~/.config/nvim/plugins/javascript-libraries-syntax.vim'
+on_ft = ['javascript', 'javascriptreact', 'typescript']
 
 #-------- vim-jsx-pretty
 [[plugins]]
 repo = 'maxmellon/vim-jsx-pretty'
-on_ft = ['javascript']
+on_ft = ['javascript', 'javascriptreact', 'typescript']
+
+[[plugins]]
+repo = 'neovim/node-host'
+build = 'npm install'
+on_ft = ['javascript', 'javascriptreact', 'typescript']
+
+[[plugins]]
+repo = 'billyvg/tigris.nvim'
+build = './install.sh'
+on_ft = ['javascript', 'javascriptreact', 'typescript']
+
+#-------- yajs.vim
+[[plugins]]
+repo = 'othree/yajs.vim'
+on_ft = ['javascript', 'javascriptreact', 'typescript']
+
+#-------- es.next.syntax.vim
+[[plugins]]
+repo = 'othree/es.next.syntax.vim'
+on_ft = ['javascript', 'javascriptreact', 'typescript']
+
+#-------- javascript-libraries-syntax.vim
+[[plugins]]
+repo = 'othree/javascript-libraries-syntax.vim'
+on_ft = ['javascript', 'javascriptreact', 'typescript']
+hook_post_source = 'source ~/.config/nvim/plugins/javascript-libraries-syntax.vim'
 
 #-------- typescript-vim
 [[plugins]]
@@ -100,11 +106,11 @@ on_ft = ['typescript']
 # repo = 'mhartington/nvim-typescript'
 # on_fi = ['typescript']
 
-#-------- vim-js-indent
-[[plugins]]
-repo = 'jason0x43/vim-js-indent'
-on_fi = ['javascript', 'typescript', 'html']
-hook_post_source = 'source ~/.config/nvim/plugins/vim-js-indent.vim'
+# #-------- vim-js-indent
+# [[plugins]]
+# repo = 'jason0x43/vim-js-indent'
+# on_fi = ['javascript', 'typescript', 'html']
+# hook_post_source = 'source ~/.config/nvim/plugins/vim-js-indent.vim'
 
 #-------- typescript-tools
 # [[plugins]]
@@ -125,3 +131,30 @@ hook_post_source = 'source ~/.config/nvim/plugins/vim-js-indent.vim'
 repo = 'elzr/vim-json'
 hook_add = 'source ~/.config/nvim/plugins/vim-json.vim'
 on_ft = ['json']
+
+## tex
+#-------- vim-tex
+[[plugins]]
+repo = 'vim-latex/vim-latex'
+hook_add = 'source ~/.config/nvim/plugins/vim-latex.vim'
+on_ft = ['tex']
+
+## rust
+#-------- rust.vim
+[[plugins]]
+repo = 'rust-lang/rust.vim'
+on_ft = ['rs']
+
+#-------- markdown preview
+[[plugins]]
+repo = 'plasticboy/vim-markdown'
+on_ft = ['markdown']
+
+[[plugins]]
+repo = 'kannokanno/previm'
+hook_add = 'source ~/.config/nvim/plugins/previm.vim'
+on_ft = ['markdown']
+
+[[plugins]]
+repo = 'tyru/open-browser.vim'
+on_ft = ['markdown']
