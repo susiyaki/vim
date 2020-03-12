@@ -1,5 +1,3 @@
-" NERDTree
-" nnoremap <silent><C-W> :VimFiler -split -simple -winwidth=35 -no-quit<CR>
 " Current baffer
 nnoremap <silent><C-W> :VimFiler -split -simple -winwidth=50 -no-quit<CR>
 

@@ -67,6 +67,9 @@ nnoremap <Leader>w :w<CR>
 " 保存せず終了
 nnoremap <Leader>q :q!<CR>
 
+"## Session
+" alias visで前回の状態を回復
+autocmd VimLeave * :mks! ~/.vim.session
 
 "##Insert Mode##
 inoremap <silent> jj <ESC>
@@ -75,76 +78,16 @@ inoremap <silent> jj <ESC>
 set fileformats=unix,dos,mac
 set fileencodings=utf-8,sjis
 
-" " git hookと連携
-" autocmd BufWritePost *
-"       \ if exists('b:git_dir') && !empty(glob(b:git_dir.'/hooks/ctags')) |
-"       \   call system('"'.b:git_dir.'/hooks/ctags"') |
-"       \ endif
-
-nnoremap <C-]> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
-
-"## Session
-" alias visで前回の状態を回復
-autocmd VimLeave * :mks! ~/.vim.session
-
-" ## javascript syntax
-augroup MyVimrc
-  autocmd!
-augroup END
-
-function! EnableJavascript()
-  " Setup used libraries
-  let g:used_javascript_libs = 'jquery,underscore,react,flux,jasmine,d3'
-  let b:javascript_lib_use_jquery = 1
-  let b:javascript_lib_use_underscore = 1
-  let b:javascript_lib_use_react = 1
-  let b:javascript_lib_use_flux = 1
-  let b:javascript_lib_use_jasmine = 1
-  let b:javascript_lib_use_d3 = 1
-endfunction
-autocmd MyVimrc FileType javascript,javascript.jsx call EnableJavascript()
-
 "## vimgrepでQuickFix開く
 autocmd QuickFixCmdPost *grep* cwindow
 
 "## filetype
 autocmd BufRead,BufNewFile *.tag setfiletype javascript     " riot.js
 autocmd BufRead,BufNewFile *.ts setlocal filetype=typescript
+autocmd BufRead,BufNewFile *.jsx set filetype=javascript.jsx
 autocmd BufRead,BufNewFile *.tsx set filetype=typescript.tsx
 autocmd BufRead,BufNewFile *.md set filetype=markdown
 
-"## cursorline
-" augroup vimrc-auto-cursorline
-"   autocmd!
-"   autocmd CursorMoved,CursorMovedI * call s:auto_cursorline('CursorMoved')
-"   autocmd CursorHold,CursorHoldI * call s:auto_cursorline('CursorHold')
-"   autocmd WinEnter * call s:auto_cursorline('WinEnter')
-"   autocmd WinLeave * call s:auto_cursorline('WinLeave')
-"
-"   let s:cursorline_lock = 0
-"   function! s:auto_cursorline(event)
-"     if a:event ==# 'WinEnter'
-"       setlocal cursorline
-"       let s:cursorline_lock = 2
-"     elseif a:event ==# 'WinLeave'
-"       setlocal nocursorline
-"     elseif a:event ==# 'CursorMoved'
-"       if s:cursorline_lock
-"         if 1 < s:cursorline_lock
-"           let s:cursorline_lock = 1
-"         else
-"           setlocal nocursorline
-"           let s:cursorline_lock = 0
-"         endif
-"       endif
-"     elseif a:event ==# 'CursorHold'
-"       setlocal cursorline
-"       let s:cursorline_lock = 1
-"     endif
-"   endfunction
-" augroup END
-
-"dein Scripts-----------------------------
 let s:dein_config_dir =$XDG_CONFIG_HOME . '/nvim'
 let s:dein_cache_dir =$XDG_CACHE_HOME . '/dein'
 
@@ -173,4 +116,3 @@ filetype plugin indent on
 
 autocmd ColorScheme * highlight Normal ctermbg=none
 autocmd ColorScheme * highlight LineNr ctermbg=none
-colorscheme gruvbox

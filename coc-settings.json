@@ -6,10 +6,17 @@
       "rootPatterns": ["Cargo.toml"]
     }
   },
-  "***********Ruby***********": "",
+
+  "snippets.extends": {
+    "javascriptreact": ["javascript"],
+    "typescript": ["javascript"],
+    "typescriptreact": ["javascript"]
+  },
+  "snippets.userSnippetsDirectory": "$HOME/.config/nvim/snippets",
+
   "solargraph.commandPath": "solargraph",
-  "solargraph.bundlerPath":"bundle",
-  "solargraph.completion":true,
+  "solargraph.bundlerPath": "bundle",
+  "solargraph.completion": true,
   "solargraph.hover": true,
   "solargraph.autoformat": true,
   "solargraph.formatting": true,
