@@ -12,6 +12,7 @@ let g:coc_global_extensions = [
   \, 'coc-solargraph'
   \, 'coc-rls'
   \, 'coc-python'
+  \, 'coc-tabnine'
   \]
 
 

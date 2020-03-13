@@ -93,6 +93,18 @@ hook_add = 'source ~/.config/nvim/plugins/vim-operator-surround.vim'
 repo = 'thinca/vim-quickrun'
 hook_add = 'source ~/.config/nvim/plugins/quickrun.vim'
 
-# vimshell: able to use shell on vim
+# vimshell: able to use shell on vim depends vimproc
+# [[plugins]]
+# repo = 'Shougo/vimshell.vim'
+#
+# [[plugins]]
+# repo = 'Shougo/vimproc.vim'
+# build = 'make'
+
+# lens.vim: expand current pane depends animate.vim
 [[plugins]]
-repo = 'Shougo/vimshell.vim'
+repo = 'camspiers/animate.vim'
+
+[[plugins]]
+repo = 'camspiers/lens.vim'
+hook_add = 'source ~/.config/nvim/plugins/lens.vim'
