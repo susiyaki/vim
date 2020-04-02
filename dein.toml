@@ -102,9 +102,9 @@ hook_add = 'source ~/.config/nvim/plugins/quickrun.vim'
 # build = 'make'
 
 # lens.vim: expand current pane depends animate.vim
-[[plugins]]
-repo = 'camspiers/animate.vim'
-
-[[plugins]]
-repo = 'camspiers/lens.vim'
-hook_add = 'source ~/.config/nvim/plugins/lens.vim'
+# [[plugins]]
+# repo = 'camspiers/animate.vim'
+#
+# [[plugins]]
+# repo = 'camspiers/lens.vim'
+# hook_add = 'source ~/.config/nvim/plugins/lens.vim'
