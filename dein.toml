@@ -108,3 +108,12 @@ hook_add = 'source ~/.config/nvim/plugins/quickrun.vim'
 # [[plugins]]
 # repo = 'camspiers/lens.vim'
 # hook_add = 'source ~/.config/nvim/plugins/lens.vim'
+#
+# # vim-dadbod
+# [[plugins]]
+# repo = 'tpope/vim-dadbod'
+#
+# # vim-dadbod-ui
+# [[plugins]]
+# repo = 'kristijanhusak/vim-dadbod-ui'
+# hook_add = 'source ~/.config/nvim/plugins/vim-dadbod-ui.vim'
