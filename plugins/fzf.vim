@@ -22,11 +22,7 @@ let g:fzf_action = {
 \ 'ctrl-o': 'vs'
 \ }
 
-" preview setting
-fzf --height 50% --layout reverse --info inline --border \
-    --preview 'file {}' --preview-window down:1:noborder \
-    --color 'fg:#bbccdd,fg+:#ddeeff,bg:#334455,preview-bg:#223344,border:#778899'
-
+" grep preview
 command! -bang -nargs=* Rg
 \ call fzf#vim#grep(
 \ 'rg --column --line-number --hidden --ignore-case --no-heading --color=always '.shellescape(<q-args>),
