@@ -56,9 +56,9 @@ repo = 'bronson/vim-trailing-whitespace'
 hook_add = 'source ~/.config/nvim/plugins/vim-trailing-whitespace.vim'
 
 # vim-submode: easily chenge window size
-[[plugins]]
-repo = 'kana/vim-submode'
-hook_add = 'source ~/.config/nvim/plugins/vim-submode.vim'
+# [[plugins]]
+# repo = 'kana/vim-submode'
+# hook_add = 'source ~/.config/nvim/plugins/vim-submode.vim'
 
 # auto-pairs: compleate brackets
 [[plugins]]
@@ -121,3 +121,7 @@ hook_add = 'source ~/.config/nvim/plugins/quickrun.vim'
 # [[plugins]]
 # repo = 'kristijanhusak/vim-dadbod-ui'
 # hook_add = 'source ~/.config/nvim/plugins/vim-dadbod-ui.vim'
+
+# wiresizer: windowサイズを変更
+[[plugins]]
+repo = 'simeji/winresizer'
