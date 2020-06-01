@@ -1,6 +1,6 @@
 " for Python
-let g:python_host_prog = $PYENV_ROOT.'/versions/neovim2/bin/python'
-let g:python3_host_prog = $PYENV_ROOT.'/versions/neovim3/bin/python'
+let g:python_host_prog = '$HOME/.anyenv/envs/pyenv/versions/neovim2/bin/python'
+let g:python3_host_prog = '$HOME/.anyenv/envs/pyenv/versions/neovim3/bin/python'
 
 "##Main Setting##
 set fenc=utf-8                          " 文字コード設定
@@ -113,6 +113,6 @@ endif
 
 filetype plugin indent on
 "End dein Scripts-------------------------
-
+"
 autocmd ColorScheme * highlight Normal ctermbg=none
 autocmd ColorScheme * highlight LineNr ctermbg=none

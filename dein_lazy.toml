@@ -71,3 +71,8 @@ on_ft = ['markdown']
 [[plugins]]
 repo = 'tyru/open-browser.vim'
 on_ft = ['markdown']
+
+[[plugins]]
+repo = 'dhruvasagar/vim-table-mode'
+on_ft = ['markdown']
+hook_add = 'source ~/.config/nvim/plugins/vim-table-mode.vim'

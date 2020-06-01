@@ -15,7 +15,6 @@ let g:coc_global_extensions = [
   \, 'coc-tabnine'
   \]
 
-
 " 画面左の警告、エラーの色
 highlight CocErrorSign ctermfg=15 ctermbg=227
 highlight CocWarningSign ctermfg=0 ctermbg=172

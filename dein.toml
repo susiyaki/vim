@@ -23,13 +23,17 @@ repo = 'junegunn/fzf.vim'
 depends = 'fzf'
 hook_add = 'source ~/.config/nvim/plugins/fzf.vim'
 
+# [[plugins]]
+# repo = 'yuki-ycino/fzf-preview.vim'
+# build = './install --all'
+
 # colorscheme: color theme
 [[plugins]]
 repo = 'morhetz/gruvbox'
 hook_add = 'colorscheme gruvbox'
 
 # [[plugins]]
-# repo = 'tomasr/molokai'
+# repo = 'tomasr/molokai
 # hook_add = 'colorscheme molokai'
 
 # [[plugins]]
@@ -52,9 +56,9 @@ repo = 'bronson/vim-trailing-whitespace'
 hook_add = 'source ~/.config/nvim/plugins/vim-trailing-whitespace.vim'
 
 # vim-submode: easily chenge window size
-[[plugins]]
-repo = 'kana/vim-submode'
-hook_add = 'source ~/.config/nvim/plugins/vim-submode.vim'
+# [[plugins]]
+# repo = 'kana/vim-submode'
+# hook_add = 'source ~/.config/nvim/plugins/vim-submode.vim'
 
 # auto-pairs: compleate brackets
 [[plugins]]
@@ -102,9 +106,22 @@ hook_add = 'source ~/.config/nvim/plugins/quickrun.vim'
 # build = 'make'
 
 # lens.vim: expand current pane depends animate.vim
-[[plugins]]
-repo = 'camspiers/animate.vim'
+# [[plugins]]
+# repo = 'camspiers/animate.vim'
+#
+# [[plugins]]
+# repo = 'camspiers/lens.vim'
+# hook_add = 'source ~/.config/nvim/plugins/lens.vim'
+#
+# # vim-dadbod
+# [[plugins]]
+# repo = 'tpope/vim-dadbod'
+#
+# # vim-dadbod-ui
+# [[plugins]]
+# repo = 'kristijanhusak/vim-dadbod-ui'
+# hook_add = 'source ~/.config/nvim/plugins/vim-dadbod-ui.vim'
 
+# wiresizer: windowサイズを変更
 [[plugins]]
-repo = 'camspiers/lens.vim'
-hook_add = 'source ~/.config/nvim/plugins/lens.vim'
+repo = 'simeji/winresizer'

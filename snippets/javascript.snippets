@@ -1,8 +1,20 @@
-snippet import
-import ${1} from '${0}';
+snippet import-default
+import ${2} from '${1}';
 
 snippet import
-import { ${1} } from '${0}';
+import { ${2}, } from '${1}';
+
+snippet export-default
+export default ${1}
 
 snippet export
-export default ${0}
+export {${1},}
+
+snippet ReactFC
+import React from 'react';
+
+const ${1}= (${2}) => {
+	return (
+		${3}
+  )
+}
