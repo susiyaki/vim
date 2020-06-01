@@ -1,7 +1,7 @@
 # coc.nvim: hyper tool
 [[plugins]]
 repo = 'neoclide/coc.nvim'
-build = './install.sh nightly'
+build = 'yarn install --frozen-lockfile'
 hook_add = 'source ~/.config/nvim/plugins/coc-setting.vim'
 
 # vimfiler depends unite.vim: explorer
