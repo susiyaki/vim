@@ -113,6 +113,6 @@ endif
 
 filetype plugin indent on
 "End dein Scripts-------------------------
-
+"
 autocmd ColorScheme * highlight Normal ctermbg=none
 autocmd ColorScheme * highlight LineNr ctermbg=none
